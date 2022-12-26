@@ -1,0 +1,143 @@
+form{
+    width: 100%;
+  }
+  label{
+    display: block;
+  }
+  
+  input, select, textarea{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .radio{
+    margin-bottom: 10px;
+    width: 20px;
+  }
+  
+  button{
+    background-color: rgba(6, 183, 233);
+    color: #fff;
+    width: 150px;
+    border: 1px solid #ccc;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* alerts */
+
+  .alert{
+    margin: 10px;
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .alert.danger{
+    background-color: #f44356;
+  }
+
+  .alert.success{
+    background-color: #25da7c;
+  }
+
+  .alert.warning{
+    background-color: #e69e2b;
+  }
+
+  table.mtable{
+    width: 100%;
+    border-collapse: collapse;
+
+    border: 1px solid #ddd;
+  }
+  th, td{
+    text-align: left;
+    padding: 10px;
+  }
+
+  table.mtable tr:nth-child(even) {
+    background:#f2f2f2;
+  }
+
+  table.mtable td{
+    padding: 10px;
+  }
+
+  ul.mtable,ol.mtable{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul.mtable li,
+  ol.mtable li{
+    padding: 10px;
+  }
+
+  ul.mtable li:nth-child(even),
+  ol.mtable li:nth-child(even) {
+    background:#f2f2f2;
+  }
+
+  /* recu*/
+
+  .cote-a-cote{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page{
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    margin: 10mm auto;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  .subpage{
+    padding: 1cm;
+    border: 5px solid #ff0000;
+    height: 257mm;
+    outline: 2cm #ffeaea;
+  }
+
+  @media print {
+    .hidden-print,.hidden-print * {
+      display: none !important;
+    }
+  }
+  @page{
+    size: A4;
+    margin: 0;
+  }
+
+  @media print {
+    html,body {
+      width: 210mm;
+      height: 297mm;
+    }
+    .hidden-print,.hidden-print * {
+      display: none !important;
+    }
+    .page{
+      width: initial;
+      min-height: initial;
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      background:initial;
+      box-shadow: initial;
+      page-break-after: always;
+    }
+  }

@@ -110,8 +110,8 @@ if(!empty($_GET["id"])){
         prix.value = Number(quantite.value)*Number(prixunitaire);
     }
    function annulerVente(idCommande,idArticle,quantite){
-        if(confirm("Voulez-vous vraiment annuler cette co$commande?")){
-            window.location.href = "../models/annulerVente.php?idVente="+idCommande+"&idArticle="+idArticle+"&quantite="+quantite
+        if(confirm("Voulez-vous vraiment annuler cette commande?")){
+            window.location.href = "../models/annulerCommande.php?idCommande="+idCommande+"&idArticle="+idArticle+"&quantite="+quantite
         }
     }
 </script>
